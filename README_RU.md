@@ -1,3 +1,5 @@
+[English](README.md) | **Русский**
+
 # HT2 Tractor Swap 1.1.4
 
 Tractor Swap разрешает использовать действие обмена машинами в меню компании с наёмными водителями, у которых трактор. Передача машины выполняется штатной функцией игры; остальные штатные условия обмена сохраняются.
@@ -43,8 +45,8 @@ Tractor Swap разрешает использовать действие обм
 python -m pip install -r requirements-test.txt
 $env:HT2_BUILD_INPUTS = 'C:\путь\вне\репозитория\к\локальным\файлам\игры'
 python build.py
-python test_mod.py
-python test_steam_language.py
+python -m tests.test_mod
+python -m tests.test_steam_language
 python package_release.py
 ```
 
@@ -57,6 +59,8 @@ python package_release.py
 | `ModifiedCore82.exe` | `b57eb1e34dd00c6c5270ca42ada931039d9baed488dee5bb33f46ffa2a6097d6` |
 
 Игровые эталоны не включены. `build.py` пишет ASI и сгенерированный ассемблер только в игнорируемый `build-output/`; зафиксированный `build.asm` — проверенный исходник ассемблера. Упаковщик принимает только ASI версии 1.1.4 с известным SHA-256 и создаёт минимальный ZIP без обложек и игровых файлов.
+
+В [истории изменений](docs/CHANGELOG.md) записаны изменения 1.1.4. Тексты сообщений игры хранятся в `build.py`.
 
 ## Лицензия и сторонние материалы
 

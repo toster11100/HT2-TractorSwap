@@ -21,7 +21,7 @@ def package():
     package_dir=output/'package'
     files={
         'plugins/HT2_TractorSwap.asi':image,
-        'README.txt':(here/'README.txt').read_bytes(),
+        'README.txt':(here/'packaging'/'README.txt').read_bytes(),
     }
     for name,payload in files.items():
         target=package_dir/name

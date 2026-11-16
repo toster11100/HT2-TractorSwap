@@ -4,7 +4,7 @@ Native pager enqueue code runs unchanged; only clock/localization and OS calls a
 from pathlib import Path
 import struct,itertools
 from functools import lru_cache
-HERE=Path(__file__).resolve().parent
+HERE=Path(__file__).resolve().parents[1]
 import pefile
 from unicorn import Uc,UC_ARCH_X86,UC_MODE_32,UC_HOOK_CODE
 from unicorn.x86_const import *

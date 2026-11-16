@@ -1,3 +1,5 @@
+[English](README.md) | [Русский](README_RU.md)
+
 # HT2 Tractor Swap 1.1.4
 
 Tractor Swap enables the company-menu vehicle-swap action for hired drivers whose vehicles are tractors. It retains the game's native swap operation and eligibility rules.
@@ -43,8 +45,8 @@ Use Python 3.10+ on Windows. The assembler/PE build dependencies and test depend
 python -m pip install -r requirements-test.txt
 $env:HT2_BUILD_INPUTS = 'C:\path\outside\the\repository\to\private-game-files'
 python build.py
-python test_mod.py
-python test_steam_language.py
+python -m tests.test_mod
+python -m tests.test_steam_language
 python package_release.py
 ```
 
@@ -57,6 +59,8 @@ python package_release.py
 | `ModifiedCore82.exe` | `b57eb1e34dd00c6c5270ca42ada931039d9baed488dee5bb33f46ffa2a6097d6` |
 
 Reference game files are not included. `build.py` writes the ASI and generated assembly only to ignored `build-output/`; the committed `build.asm` is the reviewed assembly source. The release packaging helper accepts only the 1.1.4 ASI with its known SHA-256 and creates a minimal install ZIP without cover art or game files.
+
+The [release changelog](docs/CHANGELOG.md) records the 1.1.4 changes. Runtime message strings are maintained in `build.py`.
 
 ## License and third-party material
 

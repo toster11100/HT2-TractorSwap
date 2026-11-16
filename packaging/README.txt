@@ -6,8 +6,9 @@ INSTALLATION
 3. Start the game, open F4 -> My Company, select a hired driver, and use the vehicle-swap action.
 
 The mod requires a compatible 32-bit ASI Loader and a supported game executable.
-It does not require AutoSave or another mod. Remove HT2_TractorSwap.asi while
-the game is closed to uninstall. No save files are removed.
+It does not require AutoSave or another mod. Vehicle swaps use the game's
+normal save behavior. Remove HT2_TractorSwap.asi while the game is closed to
+uninstall; the mod does not delete save files.
 
 Supported reference profiles: KOTR81, KOTR13, and ModifiedCore82. Compatibility
 is checked by executable signatures; a version number alone is not sufficient.
@@ -22,7 +23,8 @@ that it returns after swapping back.
 архива в папку игры. Запустите игру, откройте F4 -> «Моя компания», выберите
 наёмного водителя и нажмите кнопку обмена.
 
-Нужен совместимый 32-битный ASI Loader и поддерживаемый EXE. Для удаления
-закройте игру и удалите HT2_TractorSwap.asi. Сохранения не удаляются.
+Нужен совместимый 32-битный ASI Loader и поддерживаемый EXE. Обмен машин
+сохраняется по обычным правилам игры. Для удаления закройте игру и удалите
+HT2_TractorSwap.asi; файлы сохранений мод не удаляет.
 Профили: KOTR81, KOTR13 и ModifiedCore82; один номер версии не подтверждает
 совместимость. Сборка GOG отдельно не проверялась.

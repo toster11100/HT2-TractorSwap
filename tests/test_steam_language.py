@@ -10,7 +10,7 @@ from unicorn.x86_const import (
     UC_X86_REG_EIP, UC_X86_REG_ESP, UC_X86_REG_ESI,
 )
 
-ROOT=Path(__file__).resolve().parent
+ROOT=Path(__file__).resolve().parents[1]
 P=lambda value:struct.pack('<I',value&0xffffffff)
 COUNT=0
 APIS=b.APIS
