@@ -1,0 +1,9 @@
+1.1.4
+
+— Исправлена работа в локализованных версиях игры
+— Язык сообщений определяется по настройкам Steam
+— Сообщения пейджера приведены к стилю игры: КАПСОМ без точек
+
+— Fixed compatibility with localized game versions
+— Pager language now follows Steam settings
+— Pager messages now match the game style: UPPERCASE without full stops

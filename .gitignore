@@ -1,0 +1,44 @@
+# Private inputs and generated output
+build-inputs/
+private-build-inputs/
+build-output/
+
+# Game and mod binaries
+*.exe
+*.dll
+*.asi
+*.pdb
+*.obj
+*.pl1
+*.sav
+*.zip
+
+# Local settings, secrets, and logs
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.token
+*secret*
+credentials.json
+id_rsa*
+*.log
+*.log.*
+*.tmp
+*.bak
+*.dmp
+*.dump
+*.core
+*.trace
+HT2_TractorSwap_Status.ini
+TRUCK.INI
+
+# Python and IDE output
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.vs/
+.vscode/
+.idea/
